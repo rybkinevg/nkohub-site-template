@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#111111">
+    <title>НКОХАБ | Главная страница</title>
+    <link rel="stylesheet" href="./assets/css/main.min.css">
+</head>
+
+<body class="body">
+    <div class="site-container">
+        <div class="site-wrapper">
+            @include('html/nav-menu.html')
+            @include('html/header.html')
+            <main>
+                @include('html/index/section-stats.html')
+                @include('html/index/section-about.html')
+                @include('html/index/section-grants.html')
+                @include('html/index/section-news.html')
+            </main>
+            @include('html/footer.html')
+        </div>
+    </div>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

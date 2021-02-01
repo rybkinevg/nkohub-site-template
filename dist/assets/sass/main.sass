@@ -1,0 +1,82 @@
+@import "vendor"
+
+@import "./_vars"
+@import "./mixins/_font-face"
+@import "./mixins/_burger"
+@import "./_fonts"
+@import "./componets/_nav-menu"
+@import "./componets/_header"
+@import "./componets/_footer"
+@import "./componets/_section"
+
+@import "./componets/index/_section-stats"
+@import "./componets/index/_section-about"
+@import "./componets/index/_section-grants"
+@import "./componets/index/_section-news"
+
+h1,h2,h3,h4,h5,h6
+    margin-top: 0
+
+.test-img
+    height: 250px
+    background-image: url('../img/header.jpg')
+    background-size: cover
+    background-position: center
+    outline: 1px solid grey
+
+html
+    box-sizing: border-box
+
+*,
+*::before,
+*::after
+    box-sizing: inherit
+
+.img
+    max-width: 100%
+
+    &-flexible
+        width: 100%
+        height: 100%
+        object-fit: cover
+        display: block
+
+.ul-reset
+    list-style: none
+    padding: 0
+
+.body
+    background-color: $bg-color
+    color: $dark-text-color
+    font-family: $font
+
+    &.fix
+        overflow: hidden
+
+.link
+    color: inherit
+    text-decoration: none
+
+    &-accent
+        color: $accent-color
+
+    &-usual
+        color: $usual-color
+
+.btn
+
+    &-reset
+        border: none
+        background: transparent
+        cursor: pointer
+
+    &-accent
+        color: $accent-color
+
+.site-container
+    overflow: hidden
+
+.site-wrapper
+    padding-left: $sidenav-width
+
+@import "./_media"
