@@ -12,7 +12,40 @@
 
 <body class="body">
     <div class="site-wrapper">
-        @include('html/header.html')
+        <header class="header">
+    <div class="container-fluid">
+        <div class="header__content">
+            <a href="/" class="logo">
+                <div class="logo__img-wrapper">
+                    <img class="logo__img" src="http://www.aswmost.ru/attachments/Logo/ano_most_emblema_2.png" alt="">
+                </div>
+                <div class="logo__text">
+                    <h1 class="logo__name">АНО "АСБ-Мост"</h1>
+                    <span class="logo__desc">агенство социального благополучия</span>
+                </div>
+            </a>
+            <nav class="header__nav-menu">
+                <ul class="header__nav-menu-list">
+                    <li class="header__nav-menu-item">
+                        <a href="" class="header__nav-menu-link">О нас</a>
+                    </li>
+                    <li class="header__nav-menu-item">
+                        <a href="" class="header__nav-menu-link">Новости</a>
+                    </li>
+                    <li class="header__nav-menu-item">
+                        <a href="" class="header__nav-menu-link">Проекты</a>
+                    </li>
+                    <li class="header__nav-menu-item">
+                        <a href="" class="header__nav-menu-link">Отчетность</a>
+                    </li>
+                    <li class="header__nav-menu-item">
+                        <a href="" class="header__nav-menu-link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
         <main class="main">
             <section class="section">
                 <div class="container">
@@ -174,7 +207,32 @@
                 </div>
             </section>
         </main>
-        @include('html/footer.html')
+        <footer class="footer">
+    <div class="container">
+        <div class="social">
+
+        </div>
+        <nav class="footer__nav-menu nav-menu">
+            <ul class="nav-menu__list">
+                <li class="nav-menu__item">
+                    <a href="" class="nav-menu__link">О нас</a>
+                </li>
+                <li class="nav-menu__item">
+                    <a href="" class="nav-menu__link">Новости</a>
+                </li>
+                <li class="nav-menu__item">
+                    <a href="" class="nav-menu__link">Проекты</a>
+                </li>
+                <li class="nav-menu__item">
+                    <a href="" class="nav-menu__link">Отчетность</a>
+                </li>
+                <li class="nav-menu__item">
+                    <a href="" class="nav-menu__link">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</footer>
     </div>
 </body>
 

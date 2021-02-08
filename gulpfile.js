@@ -75,7 +75,7 @@ const generatePath = (dev, build, sub = null) => {
 
     // Шрифты
     path.src.fonts = path.dev + path.sub + '/fonts/**.ttf';
-    path.src.fontsSassFile = path.dev + path.sub + '/sass/_fonts.sass';
+    path.src.fontsSassFile = path.dev + path.sub + '/sass/base/_fonts.sass';
     path.dest.fonts = path.build + path.sub + '/fonts/';
     path.watch.fonts = path.dev + path.sub + '/fonts/**';
 
@@ -244,7 +244,7 @@ const fontsStyle = (done) => {
                 let weight = checkWeight(fontname);
 
                 if (c_fontname != fontname) {
-                    fs.appendFile(path.src.fontsSassFile, '@include font-face("' + font + '", "' + fontname + '", ' + weight + ');\r\n', cb);
+                    fs.appendFile(path.src.fontsSassFile, '@include font-face("' + font + '", "' + fontname + '", ' + weight + ')\r\n', cb);
                 }
                 c_fontname = fontname;
             }
