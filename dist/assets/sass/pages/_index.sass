@@ -3,15 +3,27 @@
     &__content
         display: flex
         align-items: center
+        padding: 40px
+        border-radius: 5px
+        background-color: var(--secondary-background-color)
 
     &__item
         flex-basis: 50%
 
+        @media ( max-width: 992px )
+            flex-basis: 100%
+
+    &__img
+        @media ( max-width: 992px )
+            display: none
+
     &__title
+        margin: 0
         font-size: 37px
 
     &__desc
         font-size: 18px
+        margin: 20px 0
 
 .about
 
@@ -33,3 +45,18 @@
 .news,
 .projects
     background-color: var(--secondary-background-color)
+
+.alert
+
+    &__content
+        display: flex
+        align-items: center
+
+        @media ( max-width: 992px )
+            flex-direction: column
+
+    &__item
+        flex-basis: 50%
+
+        &:not(:last-child)
+            margin-bottom: 30px
