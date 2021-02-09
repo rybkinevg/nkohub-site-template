@@ -1,3 +1,13 @@
 .link
     text-decoration: none
     color: inherit
+    transition: color 0.2s, background 0.2s
+
+    &--details
+        display: inline-block
+        border-bottom: 2px solid var(--accent-color)
+        padding-bottom: 5px
+        font-weight: bold
+
+        &:hover
+            color: var(--accent-color)
