@@ -83,6 +83,7 @@ const generatePath = (dev, build, sub = null) => {
     path.src.img = [
         `${path.dev}${path.sub}/img/**.jpg`,
         `${path.dev}${path.sub}/img/**.png`,
+        `${path.dev}${path.sub}/img/**.svg`,
         `${path.dev}${path.sub}/img/**.jpeg`
     ];
     path.dest.img = path.build + path.sub + '/img/';
