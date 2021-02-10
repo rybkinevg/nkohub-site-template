@@ -1,212 +1,194 @@
-<!DOCTYPE html>
-<html lang="ru">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Главная | АНО "АСБ-Мост"</title>
-    <link rel="stylesheet" href="./assets/css/main.min.css">
-</head>
-
-<body class="body">
-    <div class="site-wrapper">
-        @include('html/header.html')
-        <main class="main">
-            <section class="section hero">
-                <div class="container">
-                    <div class="hero__content">
-                        <div class="hero__item hero__text">
-                            <h2 class="hero__title">
-                                Наша миссия
-                            </h2>
-                            <div class="hero__desc">
-                                Мы стараемся разрабатывать и осуществлять многофункциональные, а главное, полезные
-                                проекты для реализации разных задач, в том числе, задач НКО
-                            </div>
+@include('html/header.html')
+<main class="main">
+    <section class="section hero">
+        <div class="container">
+            <div class="hero__content">
+                <div class="hero__item hero__text">
+                    <h2 class="hero__title">
+                        Наша миссия
+                    </h2>
+                    <div class="hero__desc">
+                        Мы стараемся разрабатывать и осуществлять многофункциональные, а главное, полезные
+                        проекты для реализации разных задач, в том числе, задач НКО
+                    </div>
+                </div>
+                <div class="hero__item hero__img">
+                    <img class="img img--contain" src="./assets/img/hero.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="section about">
+        <div class="container">
+            <span class="section__text section__text--center">
+                Агенство социального благополучия "Мост"
+            </span>
+            <h2 class="section__title section__title--center">
+                Вместе возможно большее!
+            </h2>
+            <div class="about__content row -cols-3">
+                <div class="col">
+                    <div class="about__item">
+                        <h3 class="about__title">Кто мы?</h3>
+                        <div class="about__text">
+                            Мы - команда единомышленников, которая посредством реализации собственных проектов
+                            делает окружающий Мир самую толику лучше.
                         </div>
-                        <div class="hero__item hero__img">
-                            <img class="img img--contain" src="./assets/img/hero.svg" alt="">
+                        <div class="about__link">
+                            <a href="about.html" class="link link--details">О нас</a>
                         </div>
                     </div>
                 </div>
-            </section>
-            <section id="about" class="section about">
-                <div class="container">
+                <div class="col">
+                    <div class="about__item">
+                        <h3 class="about__title">Что мы делаем?</h3>
+                        <div class="about__text">
+                            Мы стараемся разрабатывать и осуществлять многофункциональные, а главное, полезные
+                            проекты для реализации разных задач, в том числе, задач НКО.
+                        </div>
+                        <div class="about__link">
+                            <a href="projects.html" class="link link--details">Наши проекты</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="about__item">
+                        <h3 class="about__title">Проектная деятельность</h3>
+                        <div class="about__text">
+                            Мы занимаемся проектной деятельностью, за ходом которой Вы можете наблюдать на нашем
+                            сайте.
+                        </div>
+                        <div class="about__link">
+                            <a href="" class="link link--details">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="news" class="section news">
+        <div class="container">
+            <h2 class="section__title">
+                Новости
+            </h2>
+            <div class="news__content row -cols-3">
+                <div class="col">
+                    <a href="post.html" class="news__link link">
+                        <article class="news__item">
+                            <div class="img-wrapper--sm">
+                                <img data-src="./assets/img/news1.jpg" alt="" class="lazy img img--flexible">
+                            </div>
+                            <span class="news__date">08/02/2021</span>
+                            <h3 class="news__title">
+                                Далеко-далеко за словесными горами в стране гласных и согласных,
+                                живут рыбные тексты.
+                            </h3>
+                        </article>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="post.html" class="news__link link">
+                        <article class="news__item">
+                            <div class="img-wrapper--sm">
+                                <img data-src="./assets/img/news2.jpg" alt="" class="lazy img img--flexible">
+                            </div>
+                            <span class="news__date">08/02/2021</span>
+                            <h3 class="news__title">
+                                Далеко-далеко за словесными горами в стране гласных и согласных,
+                                живут рыбные тексты.
+                            </h3>
+                        </article>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="post.html" class="news__link link">
+                        <article class="news__item">
+                            <div class="img-wrapper--sm">
+                                <img data-src="./assets/img/news3.jpg" alt="" class="lazy img img--flexible">
+                            </div>
+                            <span class="news__date">08/02/2021</span>
+                            <h3 class="news__title">
+                                Далеко-далеко за словесными горами в стране гласных и согласных,
+                                живут рыбные тексты.
+                            </h3>
+                        </article>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="alert section">
+        <div class="container">
+            <div class="alert__content">
+                <div class="alert__item img-wrapper--sm">
+                    <img src="./assets/img/alert.png" alt="" class="img img--contain">
+                </div>
+                <div class="alert__item alert__heading">
                     <span class="section__text section__text--center">
-                        Агенство социального благополучия "Мост"
+                        пилотный проект нкохаб
                     </span>
                     <h2 class="section__title section__title--center">
-                        Вместе возможно большее!
+                        Присоединяйтесь к нашему пилотному проекту НКОХАБ
                     </h2>
-                    <div class="about__content row -cols-3">
-                        <div class="col">
-                            <div class="about__item">
-                                <h3 class="about__title">Кто мы?</h3>
-                                <div class="about__text">
-                                    Мы - команда единомышленников, которая посредством реализации собственных проектов
-                                    делает окружающий Мир самую толику лучше.
-                                </div>
-                                <div class="about__link">
-                                    <a href="about.html" class="link link--details">Подробнее</a>
-                                </div>
+                    <a href="#" class="btn">Присоединиться</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section projects">
+        <div class="container">
+            <h2 class="section__title">
+                Проекты
+            </h2>
+            <div class="projects__content row -cols-3">
+                <div class="col">
+                    <a href="project.html" class="projects__link link">
+                        <article class="projects__item">
+                            <div class="img-wrapper--sm">
+                                <img data-src="./assets/img/news4.jpg" alt="" class="lazy img img--flexible">
                             </div>
-                        </div>
-                        <div class="col">
-                            <div class="about__item">
-                                <h3 class="about__title">Что мы делаем?</h3>
-                                <div class="about__text">
-                                    Мы стараемся разрабатывать и осуществлять многофункциональные, а главное, полезные
-                                    проекты для реализации разных задач, в том числе, задач НКО.
-                                </div>
-                                <div class="about__link">
-                                    <a href="projects.html" class="link link--details">Подробнее</a>
-                                </div>
+                            <h3 class="projects__title">Далеко-далеко за словесными горами в стране гласных и
+                                согласных,
+                                живут рыбные тексты.</h3>
+                        </article>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="project.html" class="projects__link link">
+                        <article class="projects__item">
+                            <div class="img-wrapper--sm">
+                                <img data-src="./assets/img/news5.jpg" alt="" class="lazy img img--flexible">
                             </div>
-                        </div>
-                        <div class="col">
-                            <div class="about__item">
-                                <h3 class="about__title">Проектная деятельность</h3>
-                                <div class="about__text">
-                                    Мы занимаемся проектной деятельностью, за ходом которой Вы можете наблюдать на нашем
-                                    сайте.
-                                </div>
-                                <div class="about__link">
-                                    <a href="" class="link link--details">Подробнее</a>
-                                </div>
+                            <h3 class="projects__title">Далеко-далеко за словесными горами в стране гласных и
+                                согласных,
+                                живут рыбные тексты.</h3>
+                        </article>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="project.html" class="projects__link link">
+                        <article class="projects__item">
+                            <div class="img-wrapper--sm">
+                                <img data-src="./assets/img/news6.jpg" alt="" class="lazy img img--flexible">
                             </div>
-                        </div>
-                    </div>
+                            <h3 class="projects__title">Далеко-далеко за словесными горами в стране гласных и
+                                согласных,
+                                живут рыбные тексты.</h3>
+                        </article>
+                    </a>
                 </div>
-            </section>
-            <section id="news" class="section news">
-                <div class="container">
-                    <h2 class="section__title">
-                        Новости
-                    </h2>
-                    <div class="news__content row -cols-3">
-                        <div class="col">
-                            <a href="post.html" class="news__link link">
-                                <article class="news__item">
-                                    <div class="img-wrapper--sm">
-                                        <img src="./assets/img/news1.jpg" alt="" class="img img--flexible">
-                                    </div>
-                                    <span class="news__date">08/02/2021</span>
-                                    <h3 class="news__title">
-                                        Далеко-далеко за словесными горами в стране гласных и согласных,
-                                        живут рыбные тексты.
-                                    </h3>
-                                </article>
-                            </a>
-                        </div>
-                        <div class="col">
-                            <a href="post.html" class="news__link link">
-                                <article class="news__item">
-                                    <div class="img-wrapper--sm">
-                                        <img src="./assets/img/news2.jpg" alt="" class="img img--flexible">
-                                    </div>
-                                    <span class="news__date">08/02/2021</span>
-                                    <h3 class="news__title">
-                                        Далеко-далеко за словесными горами в стране гласных и согласных,
-                                        живут рыбные тексты.
-                                    </h3>
-                                </article>
-                            </a>
-                        </div>
-                        <div class="col">
-                            <a href="post.html" class="news__link link">
-                                <article class="news__item">
-                                    <div class="img-wrapper--sm">
-                                        <img src="./assets/img/news1.jpg" alt="" class="img img--flexible">
-                                    </div>
-                                    <span class="news__date">08/02/2021</span>
-                                    <h3 class="news__title">
-                                        Далеко-далеко за словесными горами в стране гласных и согласных,
-                                        живут рыбные тексты.
-                                    </h3>
-                                </article>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="alert section">
-                <div class="container">
-                    <div class="alert__content">
-                        <div class="alert__item img-wrapper--sm">
-                            <img src="./assets/img/alert.png" alt="" class="img img--contain">
-                        </div>
-                        <div class="alert__item alert__heading">
-                            <span class="section__text section__text--center">
-                                пилотный проект нкохаб
-                            </span>
-                            <h2 class="section__title section__title--center">
-                                Присоединяйтесь к нашему пилотному проекту НКОХАБ
-                            </h2>
-                            <a href="#" class="btn">Присоединиться</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="section projects">
-                <div class="container">
-                    <h2 class="section__title">
-                        Проекты
-                    </h2>
-                    <div class="projects__content row -cols-3">
-                        <div class="col">
-                            <a href="project.html" class="projects__link link">
-                                <article class="projects__item">
-                                    <div class="img-wrapper--sm">
-                                        <img src="./assets/img/news1.jpg" alt="" class="img img--flexible">
-                                    </div>
-                                    <h3 class="projects__title">Далеко-далеко за словесными горами в стране гласных и
-                                        согласных,
-                                        живут рыбные тексты.</h3>
-                                </article>
-                            </a>
-                        </div>
-                        <div class="col">
-                            <a href="project.html" class="projects__link link">
-                                <article class="projects__item">
-                                    <div class="img-wrapper--sm">
-                                        <img src="./assets/img/news1.jpg" alt="" class="img img--flexible">
-                                    </div>
-                                    <h3 class="projects__title">Далеко-далеко за словесными горами в стране гласных и
-                                        согласных,
-                                        живут рыбные тексты.</h3>
-                                </article>
-                            </a>
-                        </div>
-                        <div class="col">
-                            <a href="project.html" class="projects__link link">
-                                <article class="projects__item">
-                                    <div class="img-wrapper--sm">
-                                        <img src="./assets/img/news1.jpg" alt="" class="img img--flexible">
-                                    </div>
-                                    <h3 class="projects__title">Далеко-далеко за словесными горами в стране гласных и
-                                        согласных,
-                                        живут рыбные тексты.</h3>
-                                </article>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="section">
-                <div class="container">
-                    <h2 class="section__title">
-                        Наши партнёры
-                    </h2>
-                    <div class="section__content">
-                        123
-                    </div>
-                </div>
-            </section>
-        </main>
-        @include('html/footer.html')
-    </div>
-</body>
-
-</html>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <h2 class="section__title">
+                Наши партнёры
+            </h2>
+            <div class="section__content">
+                123
+            </div>
+        </div>
+    </section>
+</main>
+@include('html/footer.html')
